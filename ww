@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TODO: untested.
+which qdbus6 &>/dev/null && alias qdbus=$(which qdbus6)
+
 TOGGLE="false"
 POSITIONAL=()
 while [[ $# -gt 0 ]]; do
